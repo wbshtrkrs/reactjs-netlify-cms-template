@@ -2,6 +2,7 @@ import React, { useEffect, useState} from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../redux/Home/action'
 import './home.scss'
+import HomeList from '../../components/weboosh-core/homeList'
 
 import{
     bg
@@ -25,8 +26,7 @@ const Home = (props) => {
     return(
         <div>
             <div className="container">
-                <img src={bg} alt="Snow" style={imgStyle}/>
-                <div className="centered">Website Under Breathtaking Construction</div>
+                <HomeList/>
             </div>
         </div>
     )
